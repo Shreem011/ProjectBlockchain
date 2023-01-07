@@ -95,13 +95,13 @@ const Navbar = ({toggle}) => {
               
               <ListItem>
                 <NavBtn>
-                  <NavBtnLink to="/signup">Pharmacy</NavBtnLink>
+                  <NavBtnLink to="/signupPharma">Pharmacy</NavBtnLink>
                 </NavBtn>
               </ListItem>
 
               <ListItem>
                 <NavBtn>
-                  <NavBtnLink to="/signup">Laboratory</NavBtnLink>
+                  <NavBtnLink to="/signupLab">Laboratory</NavBtnLink>
                 </NavBtn>
               </ListItem>
 
