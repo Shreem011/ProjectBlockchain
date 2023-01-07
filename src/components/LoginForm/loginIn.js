@@ -11,20 +11,20 @@ import { FormButton } from './LoginElements';
 import { Text } from './LoginElements';
 import Footer from '../Footer';
 
-const LabForm = () => {
+const InForm = () => {
   return (
     <>      
     <Container>
         <FormWrap>
           <Icon to="/">MRS</Icon>
             <FormContent>
-                <Form action="/LabDashboard">
-                    <FormH1>Sign Up to register as new Laboratory</FormH1>
+                <Form action="/InDashboard">
+                    <FormH1>Sign Up to register as new Insurance</FormH1>
                     <FormLabel htmlFor='for'>UserID</FormLabel>
                     <FormInput type={String} required />
                     <FormLabel htmlFor='to'>Private Key</FormLabel>
                     <FormInput type='password' required />
-                    <FormButton type='submit' to='/LabDashboard'>Register</FormButton>
+                    <FormButton type='submit' to='/InDashboard'>Register</FormButton>
                       {/* <Text>Forgot Password</Text>
                       <Text>Sign Up</Text> */}
                 </Form>
@@ -36,4 +36,4 @@ const LabForm = () => {
   );
 };
 
-export default LabForm;
+export default InForm;

@@ -107,13 +107,13 @@ const Navbar = ({toggle}) => {
 
               <ListItem>
                 <NavBtn>
-                  <NavBtnLink to="/signup">Researchers</NavBtnLink>
+                  <NavBtnLink to="/signupRes">Researchers</NavBtnLink>
                 </NavBtn>
               </ListItem>
 
               <ListItem>
                 <NavBtn>
-                  <NavBtnLink to="/signup">Insurance</NavBtnLink>
+                  <NavBtnLink to="/signupIn">Insurance</NavBtnLink>
                 </NavBtn>
               </ListItem>
             </DropDownList>
