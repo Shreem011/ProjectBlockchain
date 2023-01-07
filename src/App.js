@@ -29,9 +29,14 @@ import LabAccess from './pages/LabAccess';
 import LabUploadpage from './pages/LabUpload';
 import SignupInpage from './pages/signupIn';
 import InDashboardpage from './pages/InDashboard';
+import ResDashboardpage from './pages/ResDashboard';
 import Indetail from './pages/Indetail';
+import Resdetail from './pages/Resdetail';
 import InAccess from './pages/InAccess';
+import ResAccess from './pages/ResAccess';
 import InUploadpage from './pages/InUpload';
+import ResUploadpage from './pages/ResUpload';
+import SignupRespage from './pages/signupRes';
 
 
 
@@ -47,12 +52,14 @@ function App() {
           <Route path='/signupPharma' element={<SignupPharmapage/>} />
           <Route path= '/SignupLab' element={<SignupLabpage/>} />
           <Route path= '/SignupIn' element={<SignupInpage/>} />
+          <Route path= '/SignupRes' element={<SignupRespage/>} />
 
           <Route path='/DocDashboard' element={<DocDashboard/>} />
           <Route path='/PatDashboard' element={<PatDashboard/>} />
           <Route path='/PharmaDashboard' element={<PharDashboardpage/>} />
           <Route path='/LabDashboard' element={<LabDashboardpage/>} />
           <Route path='/InDashboard' element={<InDashboardpage/>} />
+          <Route path='/ResDashboard' element={<ResDashboardpage/>} />
 
 
           <Route path='/Docdetail' element={<Docdetail/>} />
@@ -60,6 +67,7 @@ function App() {
           <Route path='/Pharmadetail' element={<Phardetail />} />
           <Route path='/Labdetail' element={<Labdetail />} />
           <Route path='/Indetail' element={<Indetail />} />
+          <Route path='/Resdetail' element={<Resdetail />} />
 
 
           <Route path='/accessRec' element={<Docaccess/>} />
@@ -67,6 +75,7 @@ function App() {
           <Route path='/PharmaAccess' element={<PharAccess />} />
           <Route path='/LabaccessRec' element={<LabAccess />} />
           <Route path='/InaccessRec' element={<InAccess />} />
+          <Route path='/ResaccessRec' element={<ResAccess />} />
 
           <Route path='/graRev' element={<Grantrevoke/>} />
 
@@ -75,6 +84,7 @@ function App() {
           <Route path='/PharmaUpload' element={<PharUpload />} />
           <Route path='/LabUploadrec' element={<LabUploadpage />} />
           <Route path='/InUploadrec' element={<InUploadpage />} />
+          <Route path='/ResUploadrec' element={<ResUploadpage />} />
           
           <Route path='/logout' element={<Home/>} />       
         
