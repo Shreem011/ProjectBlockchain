@@ -1,30 +1,30 @@
 import React from "react";
-import { Container } from "./LoginElements";
-import { FormWrap } from "./LoginElements";
-import { Icon } from "./LoginElements";
-import { FormContent } from "./LoginElements";
-import { Form } from "./LoginElements";
-import { FormH1 } from "./LoginElements";
-import { FormLabel } from "./LoginElements";
-import { FormInput } from "./LoginElements";
-import { FormButton } from "./LoginElements";
+import { Container } from "./toLoginElements";
+import { FormWrap } from "./toLoginElements";
+import { Icon } from "./toLoginElements";
+import { FormContent } from "./toLoginElements";
+import { Form } from "./toLoginElements";
+import { FormH1 } from "./toLoginElements";
+import { FormLabel } from "./toLoginElements";
+import { FormInput } from "./toLoginElements";
+import { FormButton } from "./toLoginElements";
 
-import { Text } from "./LoginElements";
+//import { Text } from "./LoginElements";
 import Footer from "../Footer";
-const LoginForm = () => {
+const PatLogin = () => {
   return (
     <>
       <Container>
         <FormWrap>
           <Icon to="/">MRS</Icon>
           <FormContent>
-            <Form action="/PatEntry">
-              <FormH1>Sign Up to register as new patient</FormH1>
+            <Form action="/PatDashboard">
+              <FormH1>Login as Patient</FormH1>
               <FormLabel htmlFor="for">UserID</FormLabel>
               <FormInput type={String} required />
               <FormLabel htmlFor="to">Password</FormLabel>
               <FormInput type="password" required />
-              <FormButton type="submit" to="/PatEntry">
+              <FormButton type="submit" to="/PatDashboard">
                 Register
               </FormButton>
               {/* <Text>Forgot Password</Text>
@@ -38,4 +38,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default PatLogin;

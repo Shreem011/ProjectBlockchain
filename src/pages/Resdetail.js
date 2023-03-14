@@ -1,13 +1,13 @@
-// import React, { useState } from "react";
-// import ResDashboard from "./ResDashboard";
-// import ResDetail from "../components/ResDashboard/ResDetail";
-// const Resdetail = () => {
-//   return (
-//     <>
-//       <ResDashboard/>
-//       <ResDetail />
-//     </>
-//   );
-// };
+import React, { useState } from "react";
+import ResDashboard from "./ResDashboard";
+import ResDetail from "../components/ResDashboard/ResDetail";
+const Resdetail = () => {
+  return (
+    <>
+      <ResDashboard />
+      <ResDetail />
+    </>
+  );
+};
 
-// export default Resdetail;
+export default Resdetail;

@@ -1,37 +1,43 @@
-import React from 'react'
-import { Container } from './LoginElements';
-import { FormWrap } from './LoginElements';
-import { Icon } from './LoginElements';
-import { FormContent } from './LoginElements';
-import { Form } from './LoginElements';
-import { FormH1 } from './LoginElements';
-import { FormLabel } from './LoginElements';
-import { FormInput } from './LoginElements';
-import { FormButton } from './LoginElements';
-import { Text } from './LoginElements';
-import Footer from '../Footer';
+import React from "react";
+import { Container } from "./LoginElements";
+import { FormWrap } from "./LoginElements";
+import { Icon } from "./LoginElements";
+import { FormContent } from "./LoginElements";
+import { Form } from "./LoginElements";
+import { FormH1 } from "./LoginElements";
+import { FormLabel } from "./LoginElements";
+import { FormInput } from "./LoginElements";
+import { FormButton } from "./LoginElements";
+import { Text } from "./LoginElements";
+import Footer from "../Footer";
 const PharmaForm = () => {
   return (
-    <>      
-    <Container>
+    <>
+      <Container>
         <FormWrap>
           <Icon to="/">MRS</Icon>
-            <FormContent>
-                <Form action="/PharmaDashboard">
-                    <FormH1>Sign Up to register as new Pharmacy</FormH1>
-                    <FormLabel htmlFor='for'>UserID</FormLabel>
-                    <FormInput type={String} required />
-                    <FormLabel htmlFor='to'>Private Key</FormLabel>
-                    <FormInput type='password' required />
-                    <FormButton type='submit' to='/PharmaDashboard'>Register</FormButton>
-                      {/* <Text>Forgot Password</Text>
+          <FormContent>
+            <Form action="/PharmaEntry">
+              <FormH1>Sign Up to register as new Pharmacy</FormH1>
+              <FormLabel htmlFor="for">Name</FormLabel>
+              <FormInput type={String} required />
+              <FormLabel htmlFor="to">Liscence no:</FormLabel>
+              <FormInput type={String} required />
+              <FormLabel htmlFor="to">Contact</FormLabel>
+              <FormInput type={Number} required />
+              <FormLabel htmlFor="to">Address</FormLabel>
+              <FormInput type={String} required />
+              <FormButton type="submit" to="/PharmaEntry">
+                Register
+              </FormButton>
+              {/* <Text>Forgot Password</Text>
                       <Text>Sign Up</Text> */}
-                </Form>
-            </FormContent>
+            </Form>
+          </FormContent>
         </FormWrap>
       </Container>
-      <Footer/>
-    </>    
+      <Footer />
+    </>
   );
 };
 

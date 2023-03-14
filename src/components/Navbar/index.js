@@ -35,11 +35,12 @@ const Navbar = ({ toggle }) => {
     });
   };
 
-  const options = ["Mangoes", "Apples", "Oranges"];
+  //const options = ["Mangoes", "Apples", "Oranges"];
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
   const toggling = () => setIsOpen(!isOpen);
+  const Goggling = () => setIsOpen(!isOpen);
 
   const onOptionClicked = (value) => () => {
     setSelectedOption(value);
@@ -122,21 +123,66 @@ const Navbar = ({ toggle }) => {
                     </NavBtn>
                   </ListItem>
 
-                  {/* <ListItem>
-                <NavBtn>
-                  <NavBtnLink to="/signupRes">Researchers</NavBtnLink>
-                </NavBtn>
-              </ListItem>
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/signupRes">Researchers</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
 
-              <ListItem>
-                <NavBtn>
-                  <NavBtnLink to="/signupIn">Insurance</NavBtnLink>
-                </NavBtn>
-              </ListItem> */}
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/signupIn">Insurance</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
                 </DropDownList>
               </DropDownListContainer>
             )}
           </DropDownContainer>
+
+          {/* <DropDownContainer>
+            <DropDownHeader onClick={Goggling}>sign In as... </DropDownHeader>
+            {isOpen && (
+              <DropDownListContainer>
+                <DropDownList>
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/DocEntry">Doctor</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/PatEntry">Patient</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/PharmaEntry">Pharmacy</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/LabEntry">Laboratory</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/ResEntry">Researchers</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+
+                  <ListItem>
+                    <NavBtn>
+                      <NavBtnLink to="/InEntry">Insurance</NavBtnLink>
+                    </NavBtn>
+                  </ListItem>
+                </DropDownList>
+              </DropDownListContainer>
+            )}
+          </DropDownContainer> */}
         </NavbarContainer>
       </Nav>
     </>
